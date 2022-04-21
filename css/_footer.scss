@@ -1,0 +1,209 @@
+/*accordian css*/
+.acc-bx{background:#39b3a9;margin-bottom:6px;filter:drop-shadow(2.463px 3.152px 8px rgba(0,0,0,0.08));box-shadow:2.463px 3.152px 8px rgba(0,0,0,0.08)}
+.acc-title{background:#f1f7fd;padding:28px 28px 28px 54px;font-size:18px;line-height:24px;color:#000;font-weight:600;font-family:"Poppins";position:relative}
+.acc-title.active{background:#39b3a9;color:#fff}
+.acc-desc{background:#39b3a9;display:none;margin:0;text-align:left;padding:0 48px 32px;color:#fff;font-size:14px;line-height:24px;font-weight:400;font-family:"Poppins"}
+.acc-title::before{width:9px;height:9px;top:50%;right:30px;margin-top:-5px;border-right:2px solid #182360;border-bottom:2px solid #182360;position:absolute;content:"";-webkit-transform:rotate(-45deg);transform:rotate(45deg);-webkit-transition:all .2s ease-in-out;-moz-transition:all .2s ease-in-out;-o-transition:all .2s ease-in-out;-ms-transition:all .2s ease-in-out;transition:all .2s ease-in-out;z-index:9;-ms-transform-origin:50% 50%;-webkit-transform-origin:50% 50%;-moz-transform-origin:50% 50%;transform-origin:50% 50%}
+.acc-title.active::before{border-right:2px solid #fff;border-bottom:2px solid #fff}
+/*end accordian css*/
+
+/*footer css*/
+.col-100{font-size:0}
+.diblock{display:inline-block;vertical-align:top;font-size:initial}
+.cf::after{content:"";display:table;clear:both}
+.book-appt{min-height:182px;padding:50px 77px;background:#39b3a9 url("../assets/images/book_app_bg.jpg") scroll no-repeat top center;margin:114px 0 80px;-webkit-border-radius:11px;border-radius:11px}
+.lft{float:left;text-align:left}
+.rgt{float:right}
+.book-appt .lft{text-align:left}
+.book-appt .lft p{color:rgba(255, 255, 255, 1);font-size:36px;font-weight:700;font-family:inherit;text-align:left}
+.book-appt .rgt .btn-bookappt{cursor:pointer;display:block;background:#fff;color:#39b3a9;font-size:20px;font-weight:600;width:355px;height:60px;line-height:60px;-webkit-border-radius:4px;border-radius:4px;text-align:center;margin:11px 0;-webkit-box-shadow:0 23px 43px rgba(0,0,0, .10);-moz-box-shadow:0 23px 43px rgba(0,0,0, .10);box-shadow:0 23px 43px rgba(0,0,0, .10)}
+
+
+footer{background:#232c43}
+.signup{padding:70px 0;border-bottom:1px solid #51596c;margin-bottom:30px}
+.col-550{width:47%}
+.col-550 p{color:#f4f7fe;font-size:20px;font-weight:600;font-family:inherit;text-align:left;opacity:45%;margin-top:6px}
+.col-550 p.small-para{font-size:14px;font-weight:normal;margin-top:16px}
+.col-550 p.small-para br{display:none}
+.col-625{width:53%;text-align:right}
+.col-625 input[type="text"]{border:none;background:#3d455a;color:#ccced3;font-size:14px;font-weight:normal;font-family:inherit;max-width:390px;width:100%;height:60px;margin-right:14px;-webkit-border-radius:4px;border-radius:4px;padding:4px 46px}
+.col-625 .btn-signup{-webkit-appearance:none;-moz-appearance:none;appearance:none;border:none;background:#39b3a9;color:#fff;font-size:18px;font-weight:700;font-family:inherit;max-width:215px;width:100%;height:60px;text-align:center;text-transform:uppercase;-webkit-border-radius:4px;border-radius:4px}
+
+.bottom-footer{padding-bottom:40px}
+.social-media p{color:#f4f7fe;font-size:16px;font-weight:normal;text-align:left;opacity:45%;line-height:1.5}
+.social-media p span{font-weight:700}
+.social-media-list{list-style:outside none none;margin:18px 0 0;padding:0}
+.social-media-list li{float:left;margin-right:13px}
+.social-media-list li:last-child{margin-right:0}
+.social-media-list li a{display:block}
+.social-media-list li img{margin:0;border:none;display:block;max-width:100%;height:auto}
+
+.contact p.ttl{color:#fff;font-size:18px;font-weight:600;margin-bottom:18px;opacity:45%}
+.contact-list{list-style:outside none none;margin:0;padding:0}
+.contact-list li{display:block;margin-bottom:12px}
+.contact-list li a{opacity:45%;color:#fff;font-size:16px;font-weight:normal;text-align:left}
+/*end footer css*/
+
+.main-wrapper .testimonial-sec h3 br{ display: none;}
+.main-wrapper .clinic-section h1{ margin: 0 0 50px;}
+
+/*responsive css*/
+
+@media screen and (min-width: 576px) and (max-width:767px) {
+    .container, .container-sm {
+      max-width: 100%;
+    }
+  }
+
+@media screen and (max-width:1199px) {
+    .book-appt{padding:50px 60px}
+    .book-appt .lft p{font-size:30px}
+
+    .col-625 input[type="text"]{max-width:300px;padding:4px 26px}
+    .col-625 .btn-signup{max-width:155px}
+    .col-550 p.small-para{font-size:13px}
+}
+
+
+@media screen and (max-width:991px){
+    .book-appt{background:transparent url("../assets/images/bg_mobile.png") scroll no-repeat top center/cover;padding:52px 60px;margin:50px 0 60px;}
+    .book-appt .lft,.book-appt .rgt{width:100%}
+    .book-appt .lft p{font-size:24px;text-align:center}
+    .book-appt{padding:52px 60px;}
+    .book-appt .rgt .btn-bookappt{margin:33px auto 0}
+
+
+    .col-550,.col-625{width:100%}
+    .signup-form,.col-550 p{text-align:center}
+    .col-550 p{font-size:18px}
+    .col-550 p.small-para{margin-top:24px;margin-bottom:30px}
+    .signup{padding:35px 0}
+
+    /*start doctors section*/
+    .main-wrapper .clinic-section {
+        padding: 8px 0 50px;
+    }
+    .main-wrapper .clinic-section h1 {
+        font-size: 26px;
+        margin: 0 0 36px;
+    }
+    .main-wrapper .clinic-section .map-box {
+        flex-direction: column;
+        width: 100%;
+    }
+    .main-wrapper .clinic-section .map-box .map {
+        left: 0;        
+        right: 0;
+        margin: 0 auto 35px;
+    }
+    .main-wrapper .clinic-section .map-box .seclect-box {
+        width: 100%;
+    }
+    .main-wrapper .clinic-section .map-box .seclect-box .doctors-list .doctor .img-box img {
+      width: 80px;
+      height: 80px;
+      max-width: unset;
+    }
+    .main-wrapper .clinic-section .map-box .seclect-box .doctors-list {
+        margin-top: 35px;
+    }
+    .main-wrapper .clinic-section .map-box .seclect-box .doctors-list .doctor{
+        margin-bottom: 20px;
+    }
+    .main-wrapper .clinic-section .map-box .seclect-box .doctors-list .doctor .content .doctor-name { font-size: 16px;margin-bottom: 4px;}
+
+    /* .main-wrapper .clinic-section .meet { margin-top: 30px;} */
+    /*end doctors section*/
+
+    /*start section Meet an Expert */
+    .main-wrapper .clinic-section .meet { margin-top: 30px;}    
+    /*end section Meet an Expert */
+
+
+    /*start testimonial responsive*/
+    .main-wrapper .testimonial-sec .di-flex {
+        flex-direction: column;
+    }
+    .main-wrapper .testimonial-sec .info-section,
+    .main-wrapper .testimonial-sec .info-section > div,
+    .main-wrapper .testimonial-sec .teti-carousel {
+        width: 100%;
+    }
+    .main-wrapper .testimonial-sec .info-section {
+        text-align: center;
+        margin-bottom: 30px;
+    }
+    .main-wrapper .testimonial-sec h3{ margin-bottom: 32px;font-size:26px;}
+    .main-wrapper .testimonial-sec .info-section .title{ margin-bottom: 18px;font-size: 20px; font-weight: 600;}
+    .main-wrapper .testimonial-sec .info-section .title br:first-child { display: none; }
+    .main-wrapper .testimonial-sec .teti-carousel .teti-carousel .testi-item .info-bottom { margin-bottom: 8px;}
+    /*end testimonial responsive*/
+}
+
+@media screen and (max-width:767px){
+
+    /*start WHY CHOOSE ART*/
+    .main-wrapper .why-choose h1 { font-size: 26px; margin-bottom: 35px;}
+    .acc-title {
+        padding: 20px 16px 20px 16px;
+    }
+    .acc-desc {
+        padding: 0 16px 32px;
+    }
+    /*end WHY CHOOSE ART*/
+
+    /*start section Meet an Expert */
+    .main-wrapper .clinic-section .meet { padding: 40px 30px 45px;}
+    .main-wrapper .clinic-section .meet .form {
+        flex-direction: column;
+    }
+    .main-wrapper .clinic-section .meet .form .col-input, .main-wrapper .clinic-section .meet .form .submit-btn {
+        width: 100%;
+        margin: 0;
+        display: block;
+    }
+    .main-wrapper .clinic-section .meet .form .submit-btn { line-height: 38px;margin-top: 24px;}
+    .main-wrapper .clinic-section .meet .form .col-input{ margin-bottom: 10px;}
+    .main-wrapper .clinic-section .meet .title{ margin-bottom: 27px;}
+    
+    /*end section Meet an Expert */
+
+    /*start testimonial responsive*/
+    .main-wrapper .testimonial-sec{ padding: 42px 0 26px;}
+    .main-wrapper .testimonial-sec h3 br{ display: block;}
+    .main-wrapper .testimonial-sec .teti-carousel .teti-carousel.owl-theme .owl-dots{ margin-top:16px;}
+    /*end testimonial responsive*/
+    
+    .social-media,.contact{width:100%}
+    .social-media p{text-align:center}
+    .social-media-list{max-width:199px;margin-left:auto;margin-right:auto}
+    .social-media-list li{margin-bottom:25px}
+    .bottom-footer{padding-bottom:26px}
+    .contact{text-align:center}
+    .contact-list li{margin-bottom:10px}
+
+}
+
+@media screen and (max-width: 575px) {     
+
+    /*start testimonial responsive*/
+    .main-wrapper .testimonial-sec{ background-image: url("../assets/images/bg_img.jpg");}
+    .main-wrapper .testimonial-sec .teti-carousel .teti-carousel .testi-item{ padding: 30px 40px 28px 40px;}
+    .main-wrapper .testimonial-sec .teti-carousel .teti-carousel .testi-item .info-bottom { margin-bottom: 0px;}
+    /*end testimonial responsive*/
+
+    .book-appt{padding:52px 24px}
+    .book-appt .rgt .btn-bookappt{font-size:18px;max-width:290px;width: 100%;}    
+
+    footer{ background: #232c43 url("../assets/images/footer_bg.png") scroll no-repeat top left;}
+    .col-550 p.small-para br{display:block}
+    .col-625 input[type="text"]{display:block;margin:0 auto;height:50px;border: 1px solid #6a6f87;padding: 4px 18px}
+    .col-625 .btn-signup{max-width:200px;height:50px;margin-top:27px}
+
+}
+
+@media screen and (max-width: 360px) { 
+    .acc-title {
+        font-size: 16px;
+    }
+}
