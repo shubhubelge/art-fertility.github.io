@@ -10,17 +10,20 @@
   .main-wrapper .banner-section .carosole-section{
     width: 100%;
     padding: 0;
-    padding-bottom: 60px;
+    // padding-bottom: 60px;
   }
   .main-wrapper .banner-section .form-section{
     width: 74%;
-    position: absolute;
     margin: 0 auto;
-    z-index: 5;
-    top: 430px;
+    position: absolute;
+    // z-index: 5;
+    top: 490px;
     left: 50%;
     transform: translateX(-50%);
   }
+  // .main-wrapper .banner-section .carosole-section .info-carousel.owl-theme .owl-dots{
+
+  // }
   .main-wrapper .banner-section .top-header .contact-box .call-btn{
     font-size: 12px;
     line-height: 19px;
@@ -62,49 +65,62 @@
   .main-wrapper .ac {
     z-index: 5;
     position: relative;
-    margin-top: 336px;
+    margin-top: 360px;
   }
-  .main-wrapper .banner-section .carosole-section .info-carousel .item-box{
-    flex-wrap: wrap;
+  .main-wrapper .ac .main-title{
+    font-size: 24px;
+    line-height: 30px;
+    color: #000000;
+    font-weight: bold;
+    br{
+      display: block;
+    }
   }
-  .image-section{
-    position: absolute;
-    height: 100%;
-    order: 0;
-    display: none;
-  }
+  // .main-wrapper .banner-section .carosole-section .info-carousel .item-box{
+  //   flex-wrap: wrap;
+  // }
+  // .image-section{
+  //   position: absolute;
+  //   height: 100%;
+  //   order: 0;
+  //   display: none;
+  // }
   .main-wrapper .banner-section .carosole-section .info-carousel .item-box .info-bottom {
     width: 100%;
-    justify-content: center;
-    z-index: 8;
     margin: 0;
-    margin-top: 140px;
-    flex-wrap: wrap;
+    padding: 0;
+    
+  }
+  .main-wrapper .banner-section .carosole-section .info-carousel .item-box .info-bottom .img-box{
+    display: none;
   }
   .main-wrapper .banner-section .carosole-section .info-carousel .item-box .info-bottom .content {
     text-align: center;
     margin: 14px 0;
+    padding: 0 24px;
     width: 100%;
+    font-size: 14px;
   }
-  .main-wrapper .banner-section .carosole-section .info-carousel .item-box .info-bottom .img-box {
-    width: 100%;
-  }
-  .main-wrapper .banner-section .carosole-section .info-carousel .item-box .info-bottom .img-box img {
-    margin: 0 auto;
-}
+  // .main-wrapper .banner-section .carosole-section .info-carousel .item-box .info-bottom .img-box {
+  //   width: 100%;
+  // }
+//   .main-wrapper .banner-section .carosole-section .info-carousel .item-box .info-bottom .img-box img {
+//     margin: 0 auto;
+// }
 
-  .main-wrapper .banner-section .carosole-section .banner-info-abs {
-    position: absolute;
-    left: 0;
-    top: 0;
-    z-index: 9;
-    text-align: center;
-    width: 100%;
-  }
+  // .main-wrapper .banner-section .carosole-section .banner-info-abs {
+  //   position: absolute;
+  //   left: 0;
+  //   top: 0;
+  //   z-index: 9;
+  //   text-align: center;
+  //   width: 100%;
+  // }
   .main-wrapper .banner-section {
-    min-height: 460px;
+    min-height: auto;
     background-image: url('../assets/images/mobile-bg.jpg');
     padding-top: 20px;
+    height: auto;
   }
   .main-wrapper .banner-section .top-header {
     margin-bottom: 20px;
@@ -115,15 +131,24 @@
   .main-wrapper .why-choose .retail-acc {
     width: 100%;
   }
-  .main-wrapper .banner-section .carosole-section .info-carousel .item-box .image-section .owl-img {
-    opacity: 0.3;
+  .main-wrapper .banner-section .carosole-section .info-carousel .item-box .image-section {
+    width: 100%;
     height: auto;
+    display: block;
+    position: static;
+  }
+  .main-wrapper .banner-section .carosole-section .info-carousel .item-box .image-section .owl-img{
+    padding: 0;
+    // width: 80%;
+    margin-bottom: 0;
+    height: 220px;
   }
   .main-wrapper .banner-section .carosole-section .info-carousel.owl-theme .owl-dots {
     // margin-bottom: 24px;
     // margin-top: 24px;
     position: absolute;
-    bottom: 0;
+    text-align: center;
+    bottom: 42px;
     left: 50%;
     transform: translateX(-50%);
   }
@@ -131,14 +156,19 @@
     display: none;
   }
   .main-wrapper .banner-section .carosole-section h4{
-    font-size: 24px;
+    font-size: 22px;
+    color: #000000;
+    font-weight: 400;
+    font-family: "Poppins";
     text-align: center;
   }
   .main-wrapper .banner-section .carosole-section p{
     font-size: 14px;
-    color: #000000;
     text-align: center;
     margin-bottom: 12px;
+  }
+  .main-wrapper .banner-section .carosole-section .info-carousel {
+    position: static;
   }
   .logo-box{
     width: 100px;
@@ -160,10 +190,11 @@
     background-image: url("../assets/images/our-servi-bg-small.jpg");
     background-repeat: no-repeat;
     background-size: cover;
-    height: 350px;
+    height: 300px;
   }
   .main-wrapper .our-services{
     background: none;
+    margin-top: 40px;
     .container{
       padding: 0;
     }
@@ -173,8 +204,12 @@
     text-align: center;
   }
   .main-wrapper .our-services .di-flex .title-section .title {
-    font-size: 26px;
+    font-size: 24px;
+    color: #000000;
+    font-weight: 700;
+    font-family: "Poppins";
     text-align: center;
+    padding: 0 24px;
   }
   .main-wrapper .our-services .di-flex .title-section .subtitle{
     font-size: 14px;
@@ -184,11 +219,14 @@
     font-family: "Poppins";
     text-align: center;
   }
+  .main-wrapper .testimonial-sec .teti-carousel.owl-theme .owl-dots{
+    margin-top: 12px;
+  }
   .main-wrapper .our-services .di-flex .box-section{
-    width: 64%;
+    width: 80%;
     margin: 0 auto;
     max-width: 230px;
-    margin-bottom: 24px;
+    // margin-bottom: 24px;
     position: relative;
     top: -24px;
     &.owl-theme .owl-nav{
@@ -205,6 +243,24 @@
         position: absolute;
         right: -50px;
         background: transparent;
+      }
+    }
+    &.owl-theme .owl-dots {
+      // margin-top: px;
+      margin-left: auto;
+      margin-right: auto;
+      text-align: center;
+      .owl-dot span {
+        width: 8px;
+        height: 9px;
+        margin: 0 2px;
+        background: transparent;
+        border: 1px solid #39b3a9;
+      }
+      .active{
+        span{
+          background: #39b3a9;
+        }
       }
     }
   }
@@ -239,16 +295,22 @@
     padding: 40px 0
   }
   .main-wrapper .our-services .di-flex .box-section .item img {
-    width: 120px;
+    width: 110px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .main-wrapper .our-services .di-flex .box-section .item .text, .main-wrapper .our-services .di-flex .box-section .item p{
+    text-align: center;
   }
   .sticky-btn-book-apt{
+    display: none;
     font-size: 14px;
     color: #ffffff;
     font-weight: 600;
     font-family: "Poppins";
     // height: 42px;
     background-color: #39b3a9;
-    display: block;
+    // display: block;
     text-align: center;
     padding: 14px 0;
     position: sticky;
@@ -256,9 +318,38 @@
     left: 0;
     z-index: 99;
   }
+  .sticky-block{
+    display: block;
+    -webkit-animation-name: fadeInDown;
+    animation-name: fadeInDown;
+    animation-duration: 2s;
+  }
   .main-wrapper .clinic-section .meet{
     width: 100%;
   }
+  .main-wrapper .ac .achievement-box {
+    // border-radius: 5px;
+    // box-shadow: 1.231px 1.576px 2px rgb(0 0 0 / 13%);
+    // filter: drop-shadow(1.231px 1.576px 2px rgba(0, 0, 0, 0.13));
+    // background-color: #fff;
+    // margin-top: -40px;
+    // padding: 28px 8px;
+    margin: 0;
+    border-radius: 0;
+    box-shadow: none;
+    filter:none;
+    background-color: transparent;
+    padding: 0;
+  }
+  .main-wrapper .testimonial-sec .teti-carousel .testi-item{
+    // width: 100%;
+    padding: 0;
+  }
+  .main-wrapper .banner-section .carosole-section .banner-info-abs {
+    position: static;
+  } 
+
+
 }
 @media (max-width: 767.98px) {
   

@@ -65,7 +65,7 @@ $('#getDoctorData').change(function(e){
   e.preventDefault();
   // console.log($(this).find(":selected"))
   let city = $(this).find(":selected").val();
-  console.log(city)
+  // console.log(city)
   $( '.doctors-list .doctor' ).addClass( 'is-hidden' );
   $( '.doctors-list .doctor[data-city=' + city + ']' ).removeClass( 'is-hidden' );
 });
@@ -76,3 +76,12 @@ $(".gotToForm").click(function() {
       scrollTop: $("#bookAptForm").offset().top - 100,
   }, 2000);
 });
+$(document).ready(function(){
+$(window).scroll(function() {
+  if ($(this).scrollTop() > 0) {
+    $('.sticky-btn-book-apt').addClass('sticky-block');
+  } else {
+    $('.sticky-btn-book-apt').removeClass('sticky-block');
+  }
+});
+})
