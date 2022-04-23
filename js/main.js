@@ -1,4 +1,8 @@
-const observer = lozad();
+const observer = lozad('.lozad', {
+  rootMargin: '10px 0px', // syntax similar to that of CSS Margin
+  threshold: 0.1, // ratio of element convergence
+  enableAutoReload: true // it will reload the new image when validating attributes changes
+});
 observer.observe();
 
 // ;(function() {
@@ -55,10 +59,6 @@ $(function() {
 
 });
 
-function getDoctorData(){
-  console.log(this)
-
-}
 
 $('#getDoctorData').change(function(e){
   // console.log(e)
@@ -78,7 +78,7 @@ $(".gotToForm").click(function() {
 });
 $(document).ready(function(){
 $(window).scroll(function() {
-  if ($(this).scrollTop() > 0) {
+  if ($(this).scrollTop() > 500) {
     $('.sticky-btn-book-apt').addClass('sticky-block');
   } else {
     $('.sticky-btn-book-apt').removeClass('sticky-block');

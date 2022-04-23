@@ -74,7 +74,6 @@
     }
     .carosole-section{
       width: 76%;
-      padding-right: 24px;
       position: relative;
       top:0;
       left: 0;
@@ -139,7 +138,7 @@
             .owl-img{
               max-width: 100%;
               display: block;
-              height: 100%;
+              height: auto;
               width: auto;
               margin: 0 auto;
               margin-bottom: 32px;
@@ -416,6 +415,25 @@
           background-clip: content-box;
           -webkit-transition: all 0.2s ease-in-out;
           transition: all 0.2s ease-in-out;
+          .city-name{
+            position: absolute;
+            font-size: 12px;
+            color: #000000;
+            text-transform: capitalize;
+            font-family: "Poppins";
+            &.top{
+              left: 50%;
+              bottom: 14px;
+              transform: translateX(-50%);
+            }
+            &.left{
+              left: 18px;
+            }
+            &.right{
+              right: 18px;
+            }
+          }
+          
 
           &:hover{
             background-color: #39b3a9;
@@ -441,7 +459,11 @@
           border-radius: 5px;
           box-shadow: 0 0 5px rgba(0,0,0,0.08);
           filter: drop-shadow(0 0 5px rgba(0,0,0,0.08));
+          z-index: 1;
           background-color: #ffffff;
+          -webkit-animation-name: fadeInDown;
+            animation-name: fadeInDown;
+            animation-duration: 1s;
           p{
             font-size: 12px;
             line-height: 18px;
@@ -469,12 +491,12 @@
           }
         }
         .new-delhi{
-          top:31%;
-          left: 31%;
+          top:30.5%;
+          left: 30%;
         }
         .gurugram{
-          top:29%;
-          left: 28%;
+          top:32%;
+          left: 26%;
         }
         .ahmedabad{
           top: 48%;
@@ -485,7 +507,7 @@
           left: 38%;
         }
         .hyderabad{
-          top: 65.5%;
+          top: 66.5%;
           left: 36%;
         }
         .mumbai{
@@ -509,7 +531,7 @@
             transition: all 2s ease-in-out;
             -webkit-animation-name: fadeInDown;
             animation-name: fadeInDown;
-            animation-duration: 2s;
+            animation-duration: 1s;
             .img-box{
               width:25%;
               border-radius: 1000px;
@@ -545,7 +567,7 @@
             transition: all 2s ease-in-out;
             -webkit-animation-name: fadeInDown;
             animation-name: fadeInDown;
-            animation-duration: 2s;
+            animation-duration: 1s;
           }
         }
       }
@@ -693,7 +715,6 @@
           }
         }
       }
-    // }
   }
 }
 .sticky-btn-book-apt{
@@ -703,6 +724,81 @@
   cursor: pointer;
 }
 .effect-btn:hover {box-shadow: 3.694px 4.728px 4.5px rgb(57 179 169 / 50%) !important;}
+
+#thankYou{
+  &.popup_content {
+    padding: 48px 64px 24px 64px;
+    width: 580px;
+    max-width: 84%;
+    border-radius: 5px;
+    background: #ffffff;
+    text-align: center;
+    font-family: "Poppins";
+    .thankYou_close{
+      position: absolute;
+      right: -24px;
+      top: -24px;
+      border-radius: 50px;
+      border: none;
+      outline: none;
+      font-size: 18px;
+      width: 22px;
+      height: 22px;
+      background-color: #ffffff;
+    }
+    .title{
+      font-size: 24px;
+      line-height: 30px;
+      color: #000000;
+      font-weight: 700;
+      font-family: "Poppins";
+      text-align: center;
+      margin: 0;
+      margin-bottom: 8px;
+    }
+    .subtitle{
+      font-size: 18px;
+      line-height: 30px;
+      color: #000000;
+      font-weight: 400;
+      font-family: "Poppins";
+      text-align: center;
+      padding-bottom: 48px;
+      border-bottom: 1px solid #cccccc;
+      margin-bottom: 24px;
+    }
+    .phone-number{
+      font-size: 12px;
+      color: #000000;
+      font-weight: 400;
+      font-family: "Poppins";
+      text-align: center;
+      margin-bottom: 8px;
+      .mobile{
+        color: #000000;
+      }
+      .link{
+        text-decoration: underline;
+        color: #39b3a9;
+      }
+    }
+    .thanks-img{
+      max-width: auto;
+      display: block;
+      margin: 0 auto;
+      margin-bottom: 24px;
+    }
+  }
+}
+
+#thankYou_background.popup_background{
+  opacity: 0.8 !important;
+  // background-color: black !important;
+  background: #000000 !important;
+  // backdrop-filter: blur(10px) !important;
+  // opacity: 1 !important;
+}
+
 @import "footer";
 footer {
   background-color: #232c43;

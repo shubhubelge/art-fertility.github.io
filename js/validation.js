@@ -1,12 +1,6 @@
-// form validation 
-// $('.form-content select').on('change', function() {
-//   if ($(this).val()) {
-//     return $(this).css('color', '#000000');
-//   } else {
-//   return $(this).css('color', '#888888');
-//   }
-// });
-
+$('#thankYou').popup({
+  closebutton: true,
+});
 $(".form-control").on("keyup change", function (event) {
   // if($(this).parent().siblings('.invalid').length){
     $(this).parent().siblings('.invalid').hide()
@@ -17,20 +11,20 @@ function submitData(e, formName){
   let valid = true;
   $("#"+formName+" :input[required]").each(function(){
     var input = $(this); 
-    console.log(input)
+    // console.log(input)
     if ($(this).is(':invalid') || !$(this).val()){
       valid = false;
       $(this).addClass('error').focus();
       $(this).parent().siblings('.invalid').show()
-      console.log(valid)
+      // console.log(valid)
     }
   });
   if(valid) {
-    console.log("form valid")
-    // $('#thankYou').popup('show');
+    // console.log("form valid")
+    $('#thankYou').popup('show');
   }
 }
-
+// $('#thankYou').popup('show');
 function AllowOnlyNumbers(e) {
   e = e ? e : window.event;
   var clipboardData = e.clipboardData ? e.clipboardData : window.clipboardData;
@@ -41,3 +35,13 @@ function AllowOnlyNumbers(e) {
       : String.fromCharCode(key);
   return /^\d+$/.test(str);
 }
+
+// if($('#thankYou').length){
+  // $('#thankYou').popup({
+  //   closebutton: true,
+  // });
+// }
+
+$('.thankYou_OK').click(function(){
+  $('#thankYou').popup('hide');
+})

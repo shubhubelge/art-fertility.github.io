@@ -17,7 +17,7 @@
     margin: 0 auto;
     position: absolute;
     // z-index: 5;
-    top: 490px;
+    top: 470px;
     left: 50%;
     transform: translateX(-50%);
   }
@@ -40,8 +40,8 @@
     position: relative;
     &.owl-theme .owl-nav{
       position: absolute;
-      top: 50%;
-      transform: translateY(-50%);
+      top: 30%;
+      // transform: translateY(-50%);
       width: 100%;
       button.owl-prev{
         position: absolute;
@@ -65,7 +65,7 @@
   .main-wrapper .ac {
     z-index: 5;
     position: relative;
-    margin-top: 360px;
+    margin-top: 330px;
   }
   .main-wrapper .ac .main-title{
     font-size: 24px;
@@ -348,7 +348,15 @@
   .main-wrapper .banner-section .carosole-section .banner-info-abs {
     position: static;
   } 
-
+  #thankYou.popup_content{
+    padding: 32px 24px 24px;
+  }
+  #thankYou.popup_content .thanks-img{
+    margin-bottom: 16px;
+  }
+  #thankYou.popup_content .subtitle{
+    padding-bottom: 24px;
+  }
 
 }
 @media (max-width: 767.98px) {
