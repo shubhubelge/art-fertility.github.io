@@ -184,7 +184,7 @@
     <section class="ac">
       <div class="container ">
         <div class="achievement-box">
-          <h1 class="main-title">Why Choose <br> Art Fertility Clinics?</h1>
+          <h1 class="main-title">Why Choose <br> ART Fertility Clinics?</h1>
           <div class="owl-carousel owl-theme ponters" id="pointerCor">
             <div class="points">
               <img class="lozad" data-src="assets/images/top/top1.png" alt="">
@@ -206,7 +206,7 @@
             </div>
             <div class="points">
               <img class="lozad" data-src="assets/images/top/top4.png" alt="">
-                <p class="title">Transparency</p>
+                <p class="title">Affordable & Transparent</p>
                 <div class="subtitle">Full Disclosure & Highest <br>
                   Ethical Standards</div>
             </div>
@@ -255,7 +255,7 @@
     </section>
     <section class="clinic-section" >
       <div class="container">
-        <h1>Our State of the Art  Clinics & World-Renowned Doctors</h1>
+        <h1>Our State of the ART  Clinics & World-Renowned Doctors</h1>
         <div class="map-box">
           <div class="map">
             <img class="map-img lozad" data-src="assets/images/ind-map.png" alt="">
@@ -335,6 +335,7 @@
           <div class="seclect-box form-wrapper">
             <form class="form">
               <div class="col-input">
+                <div class="ttl">Click on the drop down to view doctors, per location</div>
                 <div class="control">
                   <select class="form-control" id="getDoctorData" required>
                     <option value="delhi">Delhi</option>                    
@@ -599,6 +600,10 @@
         let infoCarousel = $("#infoCarousel").owlCarousel({
           margin:10,
           items: 1,
+          autoplay: true,
+          autoplayTimeout: 3000,
+          loop:true,
+          smartSpeed: 1500,
         });
         infoCarousel.trigger("to.owl.carousel", [4, 1])
       }
@@ -607,6 +612,10 @@
           margin:10,
           items: 1,
           autoHeight:true,
+          autoplay: true,
+          autoplayTimeout: 5000,
+          loop:true,
+          smartSpeed: 2000,
         })
       }
       if($(window).width()<992 && $('#ourServices').length){
