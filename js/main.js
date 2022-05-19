@@ -85,3 +85,19 @@ $(window).scroll(function() {
   }
 });
 })
+
+function activeTab(tabName, tabToActive){
+  console.log(tabName, tabToActive)
+  
+  $('.tabing-container .tab-btns .tab-btn').removeClass('active')
+  $('.tabing-container .tab-contents .content-new').removeClass('active')
+  $('.'+tabToActive).addClass('active')
+  $('#'+tabToActive).addClass('active')
+}
+function activeTabChild(tabName, tabToActive){
+  console.log(tabName, tabToActive)
+  $('.tabing-container .content-new .tab-btn-child').removeClass('active-child')
+  $('.tabing-container .content-new .content-child').removeClass('active-content')
+  $('.'+tabToActive).addClass('active-child')
+  $('#'+tabToActive).addClass('active-content')
+}

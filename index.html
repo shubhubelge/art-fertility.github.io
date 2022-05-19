@@ -153,29 +153,31 @@
             </div>
           </div>
           <div class="form-section form-wrapper" id="bookAptForm">
-            <h4>Book a Consultation <br>
-              Appointment</h4>
+            <h4>Book an appointment!</h4>
             <form action="#!" class="form" id="bookAptOne">
               <div class="col-input">
                 <div class="control">
-                  <input type="text" class="form-control" name="fname" placeholder="Full Name" required>
+                  <input type="text" class="form-control" name="fname" placeholder="Full Name*" required>
+                </div>
+                <!-- <p class="invalid">Please enter the valid name.</p> -->
+              </div>
+              
+              <div class="col-input">
+                <div class="control">
+                  <input type="tel" class="form-control" name="phoneNum" placeholder="Mobile Number*" required>
                 </div>
                 <!-- <p class="invalid">Please enter the valid name.</p> -->
               </div>
               <div class="col-input">
                 <div class="control">
-                  <input type="email" class="form-control" name="email" placeholder="Email" required>
+                  <input type="email" class="form-control" name="email" placeholder="Email Address*" required>
                 </div>
                 <!-- <p class="invalid">Please enter the valid name.</p> -->
               </div>
-              <div class="col-input">
-                <div class="control">
-                  <input type="tel" class="form-control" name="phoneNum" placeholder="Phone No." required>
-                </div>
-                <!-- <p class="invalid">Please enter the valid name.</p> -->
+              <div class="right-aligment">
+                <button type="submit" onclick="event.preventDefault(); submitData(event, 'bookAptOne');"
+                class="submit-btn effect-btn">Consult Now!</button>
               </div>
-              <button type="submit" onclick="event.preventDefault(); submitData(event, 'bookAptOne');"
-                class="submit-btn effect-btn">Submit</button>
             </form>
           </div>
         </div>
@@ -220,7 +222,138 @@
         </div>
       </div>
     </section>
-    <section class="our-services">
+    <section class="pro-scring">
+      <div class="container">
+        
+        <div class="tabing-container">
+          <ul class="tab-btns">
+            <li class="tab-btn ProceServi active" onclick="activeTab('parent', 'ProceServi')">Procedures & Services</li>
+            <li class="tab-btn ScrTest" onclick="activeTab('parent', 'ScrTest')">Screenings & Tests</li>
+          </ul>
+          <div class="tab-contents">
+            <div class="content-new active" id="ProceServi">
+              <div class="di-flex">
+                <div class="button-container">
+                  <button class="tab-btn-child FertiTreat active-child"  onclick="activeTabChild('child', 'FertiTreat')">Fertility Treatments <img  class="acc-arrow-img" src="assets/images/acc-right-arrow.png"  alt=""></button>
+                  <button class="tab-btn-child FemFertiTreat"  onclick="activeTabChild('child', 'FemFertiTreat')">Female Fertility Treatments <img  class="acc-arrow-img" src="assets/images/acc-right-arrow.png"  alt=""></button>
+                  <button class="tab-btn-child MalFertiTreat"  onclick="activeTabChild('child', 'MalFertiTreat')">Male Fertility Treatments <img  class="acc-arrow-img" src="assets/images/acc-right-arrow.png"  alt=""></button>
+                  <button class="tab-btn-child FertiPres"  onclick="activeTabChild('child', 'FertiPres')">Fertility Preservation <img  class="acc-arrow-img" src="assets/images/acc-right-arrow.png"  alt=""></button>
+                </div>
+                <div class="content-container">
+                  <div class="content-child active-content" id="FertiTreat">
+                    <!-- 1
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Autem, minima consequatur, aspernatur sit quam expedita unde ut, a facilis eaque temporibus consectetur sapiente maiores! Suscipit assumenda earum blanditiis nam vitae. -->
+
+                    <div class="pro-scr-info-content">
+                      <div class="pro-src-img">
+                        <img src="assets/images/pro-scr.jpg" class="pro-scr-info-img" alt="">
+                      </div>
+                      <div class="pro-src-content">
+                        <ul class="pro-src-list">
+                          <li> In Vitro Fertilization (IVF)
+                          </li>
+                          <li>Intra-Cytoplasmic Sperm Injection (ICSI)
+                          </li>
+                          <li>Intra Uterine Insemination (IUI)</li>
+                          <li>Assisted Hatching </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="content-child" id="FemFertiTreat">
+                    <div class="pro-scr-info-content">
+                      <div class="pro-src-img">
+                        <img src="assets/images/pro-scr.jpg" class="pro-scr-info-img" alt="">
+                      </div>
+                      <div class="pro-src-content">
+                        <ul class="pro-src-list">
+                          <li> In Vitro Fertilization (IVF)
+                          </li>
+                          <li>Intra-Cytoplasmic Sperm Injection (ICSI)
+                          </li>
+                          <li>Intra Uterine Insemination (IUI)</li>
+                          <li>Assisted Hatching </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="content-child" id="MalFertiTreat">
+                    <div class="pro-scr-info-content">
+                      <div class="pro-src-img">
+                        <img src="assets/images/pro-scr.jpg" class="pro-scr-info-img" alt="">
+                      </div>
+                      <div class="pro-src-content">
+                        <ul class="pro-src-list">
+                          <li> In Vitro Fertilization (IVF)
+                          </li>
+                          <li>Intra-Cytoplasmic Sperm Injection (ICSI)
+                          </li>
+                          <li>Intra Uterine Insemination (IUI)</li>
+                          <li>Assisted Hatching </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+            <div class="content-new" id="ScrTest">2
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aliquam mollitia qui expedita excepturi pariatur sunt provident quas corrupti, modi tempora sed? Officia architecto laboriosam nostrum labore, unde alias totam nihil?
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="why-choose">
+      <div class="container">
+        <h1>Why Choose ART Fertility Clinics?</h1>
+        <div class="di-flex">
+          <div class="acc retail-acc">
+            <div class="acc-bx">
+                <div class="acc-title acc-arrow active">
+                    <p>Personalized Treatment Plans</p>
+                </div>
+                <div class="acc-desc" style="display: block;">
+                    <p>Our physicians focus on understanding the root cause of your infertility issues and design specific treatment plans to suit your needs. This includes understanding your medical history, lifestyle, endocrine profile, doing detailed sperm analysis, and Ultrasound. </p>
+                </div>
+            </div>
+            <div class="acc-bx">
+                <div class="acc-title acc-arrow">
+                    <p>Science and Innovation Program</p>
+                </div>
+                <div class="acc-desc">
+                    <p>Advanced AHU &amp; PCO technology creates the best environment for your embryos, while advanced
+                      IVF technology increases accuracy of sperm testing &amp; banking. Separate sperm &amp; egg facilities with
+                      top hygiene management removes contamination risk; while the best genetics lab, egg/sperm bank
+                      &amp; blood labs increase your success rate.</p>
+                </div>
+            </div>
+            <div class="acc-bx">
+              <div class="acc-title acc-arrow">
+                  <p>Experienced and Well-Trained Clinical Staff Delivering the Highest
+                    Success Rates Globally</p>
+              </div>
+              <div class="acc-desc">
+                  <p>Internationally experienced & renowned experts in their fields, specialized genetics labs and consultants guide you with the proper diagnostic procedure for accurate solution.</p>
+              </div>
+            </div>
+            <div class="acc-bx">
+              <div class="acc-title acc-arrow">
+                  <p>State of the ART Infrastructure</p>
+              </div>
+              <div class="acc-desc">
+                  <p>Following most ethical procedures and guidelines, we offer all-round accuracy. Clarity in diagnosis, full access of records for doctor/patient understanding, disclosure of bills as per published prices & consultation without room for any error or unnecessary testing. </p>
+              </div>
+            </div>
+          </div>
+          <div class="img-box">
+            <img src="assets/images/baby-img.jpg" alt="">
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- <section class="our-services">
       <div class="container">
         <div class="di-flex">
           <div class="title-section">
@@ -252,21 +385,13 @@
           </div>
         </div>
       </div>
-    </section>
+    </section> -->
     <section class="clinic-section" >
       <div class="container">
-        <h1>Our State of the ART  Clinics & World-Renowned Doctors</h1>
+        <!--  -->
         <div class="map-box">
           <div class="map">
             <img class="map-img lozad" data-src="assets/images/ind-map.png" alt="">
-            <!-- <div class="dot new-delhi">
-              <div class="popup">
-                <p>Hub & Oak, E-14,
-                1st Floor, Defence Colony
-                New Delhi 110024</p>
-                <a href="#!" class="map-link"><img data-src="assets/images/map-link.svg" class="location lozad" alt=""> <span>Google Maps</span> </a>
-              </div>
-            </div> -->
             <div class="dot new-delhi">
               <span class="city-name left">delhi</span>
               <div class="popup">
@@ -335,6 +460,9 @@
           <div class="seclect-box form-wrapper">
             <form class="form">
               <div class="col-input">
+                <h1>State-of-the-Art Clinics
+                  and World-Renowned
+                  Doctors</h1>
                 <div class="ttl">Click on the drop down to view doctors, per location</div>
                 <div class="control">
                   <select class="form-control" id="getDoctorData" required>
@@ -357,6 +485,9 @@
                   <h4 class="doctor-name">Dr. Parul Katiyar</h4>
                   <p class="dist">Consultant</p>
                 </div>
+                <div class="consult-btn-box">
+                  <a class="btn-consult" href="#!">Consult Now!</a>
+                </div>
               </div>
               <div class="doctor" data-city="delhi">
                 <div class="img-box">
@@ -365,6 +496,9 @@
                 <div class="content">
                   <h4 class="doctor-name">Dr. Sreshtha Sagar Tanwar</h4>
                   <p class="dist">Consultant</p>
+                </div>
+                <div class="consult-btn-box">
+                  <a class="btn-consult" href="#!">Consult Now!</a>
                 </div>
               </div>
               <div class="doctor is-hidden" data-city="ahmedabad">
@@ -375,6 +509,9 @@
                   <h4 class="doctor-name">Dr. Azadeh Patel</h4>
                   <p class="dist">Consultant</p>
                 </div>
+                <div class="consult-btn-box">
+                  <a class="btn-consult" href="#!">Consult Now!</a>
+                </div>
               </div>
               <div class="doctor is-hidden" data-city="ahmedabad">
                 <div class="img-box">
@@ -383,6 +520,9 @@
                 <div class="content">
                   <h4 class="doctor-name">Dr. Vivek Kakkad</h4>
                   <p class="dist">Consultant</p>
+                </div>
+                <div class="consult-btn-box">
+                  <a class="btn-consult" href="#!">Consult Now!</a>
                 </div>
               </div>
               <div class="doctor is-hidden" data-city="chennai">
@@ -393,6 +533,9 @@
                   <h4 class="doctor-name">Dr. Erika Patel</h4>
                   <p class="dist">Consultant</p>
                 </div>
+                <div class="consult-btn-box">
+                  <a class="btn-consult" href="#!">Consult Now!</a>
+                </div>
               </div>
               <div class="doctor is-hidden" data-city="chennai">
                 <div class="img-box">
@@ -401,6 +544,9 @@
                 <div class="content">
                   <h4 class="doctor-name">Dr. Hema Vaithianathan</h4>
                   <p class="dist">Consultant</p>
+                </div>
+                <div class="consult-btn-box">
+                  <a class="btn-consult" href="#!">Consult Now!</a>
                 </div>
               </div>
               <div class="doctor is-hidden" data-city="gurgaon">
@@ -411,6 +557,9 @@
                   <h4 class="doctor-name">Dr. Gurpreet Singh Kalra</h4>
                   <p class="dist">Consultant</p>
                 </div>
+                <div class="consult-btn-box">
+                  <a class="btn-consult" href="#!">Consult Now!</a>
+                </div>
               </div>
               <div class="doctor is-hidden" data-city="gurgaon">
                 <div class="img-box">
@@ -419,6 +568,9 @@
                 <div class="content">
                   <h4 class="doctor-name">Dr. Meenakshi Dua</h4>
                   <p class="dist">Consultant</p>
+                </div>
+                <div class="consult-btn-box">
+                  <a class="btn-consult" href="#!">Consult Now!</a>
                 </div>
               </div>              
               <div class="doctor is-hidden" data-city="hyderabad">
@@ -429,6 +581,9 @@
                   <h4 class="doctor-name">Dr. Alia Reddy</h4>
                   <p class="dist">Consultant</p>
                 </div>
+                <div class="consult-btn-box">
+                  <a class="btn-consult" href="#!">Consult Now!</a>
+                </div>
               </div>
               <div class="doctor is-hidden" data-city="mumbai">
                 <div class="img-box">
@@ -437,6 +592,9 @@
                 <div class="content">
                   <h4 class="doctor-name">Dr. Abha Bhat</h4>
                   <p class="dist">Consultant</p>
+                </div>
+                <div class="consult-btn-box">
+                  <a class="btn-consult" href="#!">Consult Now!</a>
                 </div>
               </div>
               <div class="doctor is-hidden" data-city="mumbai">
@@ -447,11 +605,14 @@
                   <h4 class="doctor-name">Dr. Shilpa Saple</h4>
                   <p class="dist">Consultant</p>
                 </div>
+                <div class="consult-btn-box">
+                  <a class="btn-consult" href="#!">Consult Now!</a>
+                </div>
               </div>
             </div>
           </div>
         </div>
-        <div class="meet">
+        <!-- <div class="meet">
           <div class="form-section form-wrapper">
             <div class="title">Get a call-back from our fertility advisors</div>
             <form action="#!" class="form" id="bookAptTwo">
@@ -474,80 +635,116 @@
                 class="submit-btn effect-btn">Submit</button>
             </form>
           </div>
+        </div> -->
+      </div>
+    </section>
+    
+    <section >
+      <div class="container">
+        <div class="book-appt-new di-flex">
+          <div class="book-journey">In your journey, 
+            choose only the best!</div>
+          <div class="info-journey">At ART Fertility Clinics we provide the most
+            comprehensive range of services to cover all the
+            requirements at a Fertility clinic including in-house
+            blood lab, consultations & treatments.</div>
+          <div class="book-apt-journey"><a href="javascript:void(0);" class="btn-bookappt gotToForm effect-btn">Book an Appointment, Now!</a></div>
         </div>
       </div>
     </section>
     <section class="testimonial-sec" >
-      <div class="container">
-        <h3>Why Are Our <br>Customers So Happy?</h3>
-            <div class="owl-carousel owl-theme teti-carousel" id="tetiSection">
-              <div class="item">
-                <div class="testi-item">
-                  <p>Service of ART fertility is very good, and the staff are very helpful, they were very friendly in nature, during the whole journey they have supported us and encouraged us. Dr. Meenakshi is very professional and very helpful as she was always available and she has also treated us as a family. So Overall experience with ART was wonderful.</p>
-                  <div class="info-bottom">
-                    <div class="img-box">
-                      <img class="lozad" data-src="assets/images/teti-img/avtar-teti.png" alt="">
-                    </div>
-                    <div class="content">Isha Rani and Shiv Shankar</div>
-                    <p class="location">Patient, ART Fertility Clinics, Gurgaon</p>
-                  </div>
+      <!-- <div class="container"> -->
+        <!-- <h3>Why Are Our <br>Customers So Happy?</h3> -->
+        <div class="di-flex">
+          <div class="info-section">
+            <div>
+              <img src="assets/images/left-quotes.png" alt="">
+              <div class="title">Why are <br>
+                our customers <br>
+                so happy?</div>
+                <div class="bottom-text">
+                  <p>Understanding your feeling helps us <br>
+                    make our service better.</p>
+                  <img class="right-quote" src="assets/images/right-quotes.png" alt="">
+                </div>
+                
+              
+
+                <!-- <a href="#!" class="book-apt gotToForm effect-btn">Book Appointment</a> -->
+            </div>
+          </div>
+          <div class="teti-carousel-main">
+        <div class="owl-carousel owl-theme teti-carousel" id="tetiSection">
+          <div class="item">
+            <div class="testi-item">
+              <p>Service of ART fertility is very good, and the staff are very helpful, they were very friendly in nature, during the whole journey they have supported us and encouraged us. Dr. Meenakshi is very professional and very helpful as she was always available and she has also treated us as a family. So Overall experience with ART was wonderful.</p>
+              <div class="info-bottom">
+                <div class="img-box">
+                  <img class="lozad" data-src="assets/images/teti-img/avtar-teti.png" alt="">
+                </div>
+                <div class="content">
+                  <div class="name"> Isha Rani and Shiv Shankar</div>
+                  <p class="location">Patient, ART Fertility Clinics, Gurgaon</p>
                 </div>
               </div>
-              <div class="item">
-                <div class="testi-item">
-                  <p>Dr. Meenakshi along with Dr. Ashna and Staff at ART was very caring and cooperative, we look forward to a happy experience and complete the cycle with positive results in the rest of the journey together with ART.</p>
-                  <div class="info-bottom">
-                    <div class="img-box">
-                      <img class="lozad" data-src="assets/images/teti-img/avtar-teti.png" alt="">
-                    </div>
-                    <div class="content">Kapil & Namrata</div>
-                    <p class="location">Patient, ART Fertility Clinics, Gurgaon</p>
-                  </div>
+            </div>
+          </div>
+          <div class="item">
+            <div class="testi-item">
+              <p>Dr. Meenakshi along with Dr. Ashna and Staff at ART was very caring and cooperative, we look forward to a happy experience and complete the cycle with positive results in the rest of the journey together with ART.</p>
+              <div class="info-bottom">
+                <div class="img-box">
+                  <img class="lozad" data-src="assets/images/teti-img/avtar-teti.png" alt="">
+                </div>
+                <div class="content">
+                  <div class="name"> Kapil & Namrata</div>
+                <p class="location">Patient, ART Fertility Clinics, Gurgaon</p>
+
                 </div>
               </div>
-              <div class="item">
-                <div class="testi-item">
-                  <p>Like all other couple trying to add to their family or starting a new, we stepped into ART FERTILITY CLINICS Apprehensive, but this has truly been the best decision and this clinic has managed to hold such an important part of our journey towards fulfillment. This clinic hands down the best. We truly are thankful to all the staff; Dr. Gurpreet for being so kind and approachable and being so detailed during the treatment here. Dr. Aastha Ma'am Simran for being professional & attentive towards us. And the staff nurses for giving the best care and experience. We had been to many doctors and hospitals. But no one has been managed to come close to the level of treatment given by this facility, we have recommended this facility to all our friends & relatives trying to start a new family. for all the best care this facility has given us.  This small word of appreciation is the least we could do for expressing our profound gratitude toward this facility. 
-                    Thank you very much and we hope this facility achieves the success it deserves.</p>
-                  <div class="info-bottom">
-                    <div class="img-box">
-                      <img class="lozad" data-src="assets/images/teti-img/avtar-teti.png" alt="">
-                    </div>
-                    <div class="content">Moala</div>
-                    <p class="location">Patient, ART Fertility Clinics, Gurgaon</p>
-                  </div>
+            </div>
+          </div>
+          <div class="item">
+            <div class="testi-item">
+              <p>Like all other couple trying to add to their family or starting a new, we stepped into ART FERTILITY CLINICS Apprehensive, but this has truly been the best decision and this clinic has managed to hold such an important part of our journey towards fulfillment. This clinic hands down the best. We truly are thankful to all the staff; Dr. Gurpreet for being so kind and approachable and being so detailed during the treatment here. Dr. Aastha Ma'am Simran for being professional & attentive towards us. And the staff nurses for giving the best care and experience. We had been to many doctors and hospitals. But no one has been managed to come close to the level of treatment given by this facility, we have recommended this facility to all our friends & relatives trying to start a new family. for all the best care this facility has given us.  This small word of appreciation is the least we could do for expressing our profound gratitude toward this facility. 
+                Thank you very much and we hope this facility achieves the success it deserves.</p>
+              <div class="info-bottom">
+                <div class="img-box">
+                  <img class="lozad" data-src="assets/images/teti-img/avtar-teti.png" alt="">
+                </div>
+                <div class="content">
+                  <div class="name"> Moala</div>
+                <p class="location">Patient, ART Fertility Clinics, Gurgaon</p>
                 </div>
               </div>
-              <div class="item">
-                <div class="testi-item">
-                  <p>This is from proud parents praising Dr. Meenaskshi Dua and ART Fertility Clinics for playing a huge role in fulfilling one of our awaited desire. At first, we were not sure if we could afford treatment here and trust was the biggest concern for us, but after meeting Dr. Meenakshi Ma'am trust column got ticked and the charges were also reasonable if compared with the market. Overall we felt that we were taking treatment from years old family doctor. 
-                    We highly recommend ART to whosoever is reading this, despite of the expenses that occurred & mental efforts you have to go through the return on investment would be priceless and you won't regret the decision. 
-                    That's all from us and ALL THE BEST for your journey. Keep in mind God will never let his/her children sad. So Keep smiling.</p>
-                  <div class="info-bottom">
-                    <div class="img-box">
-                      <img class="lozad" data-src="assets/images/teti-img/avtar-teti.png" alt="">
-                    </div>
-                    <div class="content">Amandeep</div>
-                    <p class="location">Patient, ART Fertility Clinics, Gurgaon</p>
-                  </div>
+            </div>
+          </div>
+          <div class="item">
+            <div class="testi-item">
+              <p>This is from proud parents praising Dr. Meenaskshi Dua and ART Fertility Clinics for playing a huge role in fulfilling one of our awaited desire. At first, we were not sure if we could afford treatment here and trust was the biggest concern for us, but after meeting Dr. Meenakshi Ma'am trust column got ticked and the charges were also reasonable if compared with the market. Overall we felt that we were taking treatment from years old family doctor. 
+                We highly recommend ART to whosoever is reading this, despite of the expenses that occurred & mental efforts you have to go through the return on investment would be priceless and you won't regret the decision. 
+                That's all from us and ALL THE BEST for your journey. Keep in mind God will never let his/her children sad. So Keep smiling.</p>
+              <div class="info-bottom">
+                <div class="img-box">
+                  <img class="lozad" data-src="assets/images/teti-img/avtar-teti.png" alt="">
+                </div>
+                <div class="content">
+                  <div class="name"> Amandeep</div>
+                <p class="location">Patient, ART Fertility Clinics, Gurgaon</p>
                 </div>
               </div>
+            </div>
+          </div>
         </div>
-      </div>
-    </section>
-    <section >
-      <div class="container">
-        <div class="book-appt cf">
-          <div class="lft"><p>IN YOUR JOURNEY, <br>
-            CHOOSE ONLY THE BEST! </p></div>
-          <div class="rgt"><a href="javascript:void(0);" class="btn-bookappt gotToForm effect-btn">Book an Appointment, now!</a></div>
         </div>
-      </div>
+        </div>
+      <!-- </div> -->
     </section>
     <footer >
       <div class="container">
         <div class="col-100 signup">
-          <div class="col-550 diblock">
+          <div class="footer-title"> ART Fertility Clinics can help you achieve your dream of Parenthood</div>
+          <!-- <div class="col-550 diblock">
             <p>SIGN UP FOR ART FERTILITY NEWSLETTER</p>
             <p class="small-para">Register your email to receive <br>information from ART Fertility Clinics</p>
           </div>
@@ -556,11 +753,18 @@
               <input type="text" name="email" value="" placeholder="Your Email Address">
               <button class="btn-signup effect-btn" name="signup">sign up</button>
             </form>
-          </div>
+          </div> -->
         </div>
-        <div class="cf bottom-footer">
-          <div class="lft social-media">
-            <p>ART Fertility Clinics can help you achieve<br> your dream of <span>Parenthood</span> </p>
+        <div class="bottom-footer">
+          <div class="contact">
+            <p class="ttl-new">Contact Us</p>
+            <ul class="contact-list">
+              <li><a class="mobile-number" href="tel:18001037555">1800 103 7555(TOLL FREE)</a></li>
+              <li><a class="email" href="mailto:info.india@artfertilityclinics.com">info.india@artfertilityclinics.com</a></li>
+            </ul>
+          </div>
+          <div class="social-media">
+            <!-- <p>ART Fertility Clinics can help you achieve<br> your dream of <span>Parenthood</span> </p> -->
             <ul class="social-media-list cf">
               <li><a target="_black" href="https://www.facebook.com/ARTfertilityIndia/"><img class="lozad" data-src="assets/images/fb_icon.jpg" alt="facebook"></a></li>
               <li><a target="_black" href="https://twitter.com/art_fertility"><img class="lozad" data-src="assets/images/twt_icon.jpg" alt="twitter"></a></li>
@@ -568,13 +772,7 @@
               <li><a target="_black" href="https://www.youtube.com/c/ARTFertilityClinics"><img class="lozad" data-src="assets/images/youtube_icon.jpg" alt="youtube"></a></li>
             </ul>
           </div>
-          <div class="rgt contact">
-            <p class="ttl">Contact Us</p>
-            <ul class="contact-list">
-              <li><a href="tel:18001037555">1800 103 7555(TOLL FREE)</a></li>
-              <li><a href="mailto:info.india@artfertilityclinics.com">info.india@artfertilityclinics.com</a></li>
-            </ul>
-          </div>
+          
         </div>
       </div>
     </footer>
@@ -592,7 +790,7 @@
   <script src="assets/vendors/js/jquery.popupoverlay-min.js"></script>
   <script rel="prefetch" as="script" src="assets/vendors/js/owl.carousel.min.js"></script>
   <script rel="prefetch" as="script"  src="assets/vendors/js/lozad.min.js"></script>
-  <script src="js/main-min.js"></script>
+  <script src="js/main.js"></script>
   <script src="js/validation-min.js"></script>
   <script>
     $(document).ready(function(){
@@ -610,9 +808,9 @@
       if ($('#tetiSection').length) {
         let infoCarousel = $("#tetiSection").owlCarousel({
           margin:10,
-          items: 1,
+          items: 1.2,
           autoHeight:true,
-          autoplay: true,
+          // autoplay: true,
           autoplayTimeout: 5000,
           loop:true,
           smartSpeed: 2000,
