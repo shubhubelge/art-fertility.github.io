@@ -1,0 +1,140 @@
+.form-wrapper {
+  .form {
+    padding: 1px 0;
+    .form-space {
+      margin: 80px 0;
+    }
+  }
+  .mobile-number-flex{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    .mobileNum, .invalid{
+      width: auto;
+      width: 50%;
+    }
+    .invalid{
+      text-align: right;
+    }
+    .control{
+      width: 100%;
+    }
+  }
+ 
+  // .form-content {
+  //   display: flex;
+  //   flex-wrap: wrap;
+  //   width: 880px;
+  //   margin: 0 auto;
+  //   justify-content: center;
+  // }
+  .col-input {
+    margin-bottom: 8px;
+    width: 100%;
+    // margin-bottom: 48px;
+    position: relative;
+    top: 0;
+    left: 0;
+  }
+  .form input, .form .col-input select {
+    border: none;
+    border-radius: 5px;
+    padding: 10px 16px;
+    width: 100%;
+    background-color: #f7f7f7;
+    box-sizing: border-box;
+    outline: none;
+    height: 40px;
+    font-size: 14px;
+    color: #000000;
+    font-weight: 400;
+    font-family: "Poppins";
+    &::placeholder{
+      color: #000000;
+      opacity: 1;
+    }
+    &::-webkit-input-placeholder {
+      color: #000000;
+      opacity: 1;
+    }
+    &:-ms-input-placeholder {
+      color: #000000;
+      opacity: 1;
+    }
+    &.error{
+      border-color: #E34949;
+      background-color: rgba(227, 73, 73, 0.05);
+      &::-webkit-input-placeholder{
+        color: #E34949;
+      }
+      &::placeholder{
+        color: #E34949;
+      }
+      &::placeholder{
+        color: #E34949;
+      }
+    }
+  }
+    
+  .form .col-input select {
+    width: 280px;
+    -moz-appearance: none;
+    -webkit-appearance:none;
+    appearance: none;
+    // background-image: url("../assets/images/select-arrow.svg");
+    background-image: url('data:image/svg+xml;utf8,<svg version="1.2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 13 8" width="13" height="8"> <title>Shape 1</title> <path id="Shape 1" fill="black" class="s0" d="m7 8l-6-7h12l-6 7"/> </svg>');
+    background-position: 96% 50%;
+    background-repeat: no-repeat;
+    // color: #000000;
+    color: #000000;
+    option {
+      color: #000000;
+    }
+    // option:first-child {
+    //   color: #888888;
+    //   background-color: transparent;
+    //   opacity: 1;
+    // }
+    &.error{
+      color: #E34949;
+      opacity: 1;
+
+    }
+  }
+  .right-aligment{
+    text-align: right;
+  }
+  .submit-btn {
+    display: flex;
+    align-items: flex-end;
+    text-align: center;
+    padding: 14px 0;
+    border: none;
+    display: inline-block;
+    cursor: pointer;
+    width: 100%;
+    margin-top: 8px;
+    width: 200px;
+    // height: 40px;
+    border-radius: 5px;
+    background-color: #39b3a9;
+    font-size: 14px;
+    color: #ffffff;
+    font-weight: 400;
+    font-family: "Poppins";
+    text-align: center;
+  }
+  .form {
+    .invalid,
+    .isempty {
+      font-size: 16px;
+      color: #e34949;
+      margin: 0;
+      margin-top: 8px;
+      display: none;
+      // position: absolute;
+      left: 0;
+      top: auto;
+    }
+  }
+}
